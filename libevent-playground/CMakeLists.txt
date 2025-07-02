@@ -10,3 +10,7 @@ link_directories(${CMAKE_SOURCE_DIR}/libs/libevent/lib)
 # Simple Timer
 add_executable(SimpleTimer SimpleTimer.cpp)
 target_link_libraries(SimpleTimer event)
+
+# Simple TCP Server
+add_executable(SimpleTCPServer SimpleTCPServer.cpp)
+target_link_libraries(SimpleTCPServer event)
